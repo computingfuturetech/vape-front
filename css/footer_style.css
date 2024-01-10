@@ -64,7 +64,7 @@ body{
     flex-direction: column;
 }
 
-.footer .middle-section h3 {
+.footer .middle-section ul h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     color: #fff;
@@ -78,12 +78,14 @@ body{
 }
 
 .footer .middle-section ul {
+    height: 82%;
     list-style: none;
     margin: 0px;
     padding: 0px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-evenly;
     gap: 16px;
 }
 
@@ -106,7 +108,7 @@ body{
 .footer .right-section {
     height: 100%;
     width: 35%;
-    display: flex;
+    display: inline-flex;
     align-items: start;
     justify-content: space-evenly;
     flex-direction: column;
@@ -178,7 +180,7 @@ body{
     border-radius: 6px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 90%;
     font-weight: 700;
     line-height: normal;
     font-family: 'Montserrat', sans-serif;
@@ -211,4 +213,124 @@ body{
     margin: 0px;
     padding: 0px;
     line-height: 160%;
+}
+
+.footer .left-section .social-media svg{
+    margin: 10% 5px;
+}
+.footer .horizontal-rule{
+    display: none;
+    height: 1px;
+    width: 90%;
+    background-color: #979797;
+    margin: 4% 0px;
+}
+
+@media only screen and (max-width: 659px) {
+    .footer{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .footer .left-section{
+        width: 90%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .left-section img{
+          width: 30%;
+        margin: 4% 0px;
+
+    }
+    .footer .left-section p{
+        font-size: 14px;
+        text-align: center;
+        margin: 4% 0px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .footer .left-section h3{
+        margin: 4% 0px;
+    }
+    .footer .horizontal-rule{
+        display: block;
+    }
+    .footer .middle-section{
+        width: 90%;
+        align-items: center;
+        
+    }
+    .footer .middle-section h3 {
+        width: 100%;
+        text-align: center;margin: 4% 0px;
+    }
+    .footer .middle-section ul{
+        width: 100%;
+        align-items: center;
+    }
+    .footer .right-section{
+        width: 90%;
+        align-items: center;
+    }
+    .footer .right-section p{
+        margin: 4% 0px;
+        text-align: center;
+    }
+    .footer .right-section h3 {
+        margin: 4% 0px;
+    }
+    .footer .right-section .input{
+        height: 120px;
+        flex-direction: column;
+        margin: 4% 0px;
+    }
+    .footer .right-section .input input{
+        height: 50px;
+    }
+    .footer .right-section .input button{
+        height: 50px;
+        margin-top: 4%;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 660px) and (max-width:796px){
+    .footer .right-section .input{
+        height: 120px;
+        flex-direction: column;
+        margin: 4% 0px;
+    }
+    .footer .right-section .input button{
+        height: 50px;
+        margin-top: 4%;
+        font-size: 10px;
+    }
+    .footer .right-section .input input{
+        height: 50px;
+        font-size: 10px;
+    }
+    .footer .right-section p {
+        font-size: 14px;
+    }
+    .footer .middle-section ul{
+        height: 90%;
+        justify-content: space-between;
+    }
+    
+    .footer .middle-section ul li{
+        font-size: 14px;
+    }
+    .footer .middle-section{
+        height: 100%;
+    }
+    .footer .left-section p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .footer .left-section img {
+        width: 50%;
+    }
 }
