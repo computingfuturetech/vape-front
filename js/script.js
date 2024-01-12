@@ -13,3 +13,18 @@ fetch("./footer.html")
     .then(data => {
         document.querySelector("footer").innerHTML = data;
     });
+
+    
+    $( document ).ready(function() {
+      console.log( "document loaded" );
+  });
+
+  $( window ).on( "load", function() {
+      console.log( "window loaded" );
+  });
+  document.getElementById("demo").addEventListener("click", myFunction);
+  
+  function myFunction() {
+      console.log("clicked");
+    document.getElementById("sidebar").style.display = "block";
+  }
