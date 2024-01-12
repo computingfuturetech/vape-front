@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -118,7 +118,6 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    /* justify-content: space-around; */
 }
 
 .navbar .navbar-icons li input {
@@ -147,4 +146,226 @@ body{
     position: absolute;
     top: 40px;
     right: 260px;
+}
+ */
+ body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* .promotions-section {
+    background-color: #19B8E2;
+    height: 25px;
+}
+
+.promotions-section p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.toogle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+.toogle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 4px;
+
+}
+.navbar .icon{
+    display: none;
+}
+
+.navbar .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .navbar-items {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+}
+
+.navbar .navbar-items ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+.navbar .navbar-items ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-items ul li a:hover {
+    color: #19B8E2;
+}
+
+.navbar .navbar-items ul li a.active {
+    color: #19B8E2;
+}
+
+.navbar .navbar-icons {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.navbar .navbar-icons i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .navbar-icons ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar .navbar-icons ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* justify-content: space-around; */
+/* } */
+
+/* .navbar .navbar-icons li input {
+    width: 300px;
+    height: 60%;
+    border: 1px solid #141414;
+    border-radius: 5px;
+    outline: #fff;
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding-inline: 10px;
+    background-image: url("../assets/images/search.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+
+}
+#hamburger{
+    display: none;
+}
+
+.navbar .navbar-icons .search {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+} */
+
+header{
+    /* background-color: #000; */
+    /* width: 100vh; */
+}
+
+
+nav{
+    background-color: #000;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+nav a:hover{
+    color: #19B8E2;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
 }
