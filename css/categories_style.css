@@ -6,7 +6,7 @@ body{
 }
 .container{
     width: 100%;
-    height: 2500px;
+    height: max-content;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -18,6 +18,9 @@ body{
     width: 90%;
     margin-top: 50px;
     background-image: url("/assets/images/category-hero-smoke.png"), linear-gradient(to right,#1E91DC,#EF33B5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -143,10 +146,23 @@ body{
     align-items: center;
 }
 
+.container .heading{
+    height: 40px;
+    width: 90%;
+    display: none;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-style: normal;
+}
 .container .products {
     width: 100%;
-    height: 20%;
+    /* height: 500px; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -154,19 +170,20 @@ body{
 
 .container .products .product {
     width: 20%;
-    height: 90%;
+    /* height: 90%; */
+    min-width: 210px;
+    /* width: 300px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    margin: 0px 10px;
+    margin: 5px 10px;
     cursor: pointer;
 }
 
 .container .products .product .product-img {
-    height: 100%;
-    /* height: 300px; */
+    height: 250px;
     width: 100%;
     border: double 1px transparent;
     background-image: linear-gradient(#000, #000),
@@ -184,8 +201,10 @@ body{
 }
 
 .container .products .product .product-img img {
-    width: 120px;
-    height: 50%;
+    width: 150px;
+    height: 150px;
+    /* padding: 50px 0px; */
+    /* height: 100px; */
     object-fit: contain;
 }
 
@@ -197,8 +216,10 @@ body{
     font-feature-settings: 'clig' off, 'liga' off;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
-    /* line-height: 44px; */
-    height: 24px;
+    /* line-height: 44px;
+    height: 24px; */
+    margin-top: 15px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -212,7 +233,7 @@ body{
     text-align: center;
     padding-top: 0;
     margin: 10px;
-    line-height: 44px;
+    /* line-height: 44px; */
 
 }
 
@@ -260,4 +281,132 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.container .products .product .colors svg{
+    height: 20px;
+    margin-inline: 5px;
+}
+.sortBy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filterAndSort{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.filterAndSort h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    font-style: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 550px) {
+    .container .products .product{
+        width: 80%;
+        /* min-width: 160px; */
+    }
+}
+@media screen and (max-width: 756px) {
+    .container .heading {
+        display: flex;
+    }
+    .hero{
+        display: none;
+    }
+    .container .filters .right-section .sortBy{
+        display: none;
+    
+    }
+    .container .filters .left-section{
+        display: none;
+    }
+    .filterAndSort{
+        display: flex;
+        justify-content: start;
+    }
+    .container .heading{
+        font-size: 24px;
+    
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 551px) and (max-width: 690px) {
+    .container .products .product{
+        width: 20%;
+        min-width: 160px;
+    }
+    .container .products .product .product-img{
+        height: 180px;
+    }
+    .container .products .product .product-img img{
+        width: 100px;
+        height: 100px;
+    }
+    .container .products .product .product-name{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .container .products .product .product-price{
+        margin-top: 5px;
+        font-size: 24px;
+    }
+    .container .products .product .colors{
+        margin: 0%;
+    }
+    .container .products .product .colors svg{
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 691px) and (max-width: 920px) {
+    .container .products .product .product-img{
+        height: 200px;
+    }
+}
+@media screen and (min-width:757px) and (max-width: 880px) {
+
+    .container .heading {
+        display: flex;
+    }
+    .hero{
+        display: none;
+    }
+    
+    
+}
+@media screen and (min-width: 881px) and (max-width: 1280px) {
+    /* .container .products{
+        height: 160px;
+    } */
+    /* .container .products .product .product-img img{
+        width: 100px;
+        height: 60px;
+    } */
+    /* .container .products .product {
+        width: 30%;
+    } */
+}
+
+@media screen and(min-width:881px) and (max-width: 1050px) {
+    /* .container .products{
+        height: 18%;
+    }
+    .container .heading{
+        font-size: 24px;
+    } */
+    
 }
